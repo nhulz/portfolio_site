@@ -1,151 +1,254 @@
----
-title: Welcome to Middleman
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Welcome to Foundation</h1>
-  </div>
-</div>
 
-<div class="row">
-  <div class="large-12 columns">
-    <div class="panel">
-      <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-      <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-      <p>Once you've exhausted the fun in this document, you should check out:</p>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-      <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-    </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-        </div>        
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "header" %>
 
-<div class="row">
-  <div class="large-8 medium-8 columns">
-    <h5>Here&rsquo;s your basic grid:</h5>
-    <!-- Grid Example -->
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout panel">
-          <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+<body>
+
+<%= partial "nav" %>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Nathan Hulsey</h1>
+            <h3>Graphics | Web | Photography</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 medium-6 columns">
-        <div class="callout panel">
-          <p>Six columns</p>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="text-center">About Me</h2>
+                    <hr class="small">
+
+                    <div class="large-4 columns">
+                        <div class="about-pic"><img src="img/me.png"></div>
+                        <hr>
+                        <p>
+                        Check out my <a target="blank" href="img/nathan_hulsey_resume.pdf">Résumé</a></p>
+                    </div>                    
+                    <div class="large-7 columns">
+                        <p>
+                        Hello, and thanks for visiting my site! I'm Nathan, <br/>a Graphic Design and Interactive Media major at Northeastern University in Boston, MA. </p>
+                        <p>
+                        As a designer I find myself constantly challenging myself to develop my skills and learn as much as I can from my spectuacular peers who I have the pleasure of working with every day. <br/>While I'm not in class, I work with the incredible student designers at <a target="blank" href="http://northeastern.edu/scout">Scout</a>, and with the dedicated management team at <a target="blank" href="http://northeastern.edu/idea">IDEA</a>. When I'm not working I am almost certainly outside or at a concert, my two greatest loves next to design, of course. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <div class="callout panel">
-          <p>Six columns</p>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="large-10 large-offset-1 columns">
+                    <h2>What I do</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="medium-3 small-6 columns">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-pencil fa-stack-1x blue"></i>
+                            </span>
+                                <h4>
+                                    <strong>Design</strong>
+                                </h4>
+                                <p>UI/UX, Identity & Branding in the Adobe Creative Suite </p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="medium-3 small-6 columns">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-camera-retro fa-stack-1x blue"></i>
+                            </span>
+                                <h4>
+                                    <strong>Photography</strong>
+                                </h4>
+                                <p>Just me and my trusty Canon 6D. Commercial, studio, and on-site</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="medium-3 small-6 columns">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code fa-stack-1x blue"></i>
+                            </span>
+                                <h4>
+                                    <strong>Web Design</strong>
+                                </h4>
+                                <p>I build websites using HTML, CSS, and WordPress</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="medium-3 small-6 columns">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-comments-o fa-stack-1x blue"></i>
+                            </span>
+                                <h4>
+                                    <strong>Collaborate</strong>
+                                </h4>
+                                <p>I love being a part of a team and working with other creative minds</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="callout panel">
-          <p>Four columns</p>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="large-12 text-center columns">
+                    <h2>My Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="medium-4 columns">
+                            <div class="portfolio-item">
+                                <a href="/project_idea.html">
+                                    <figure class="cap-bot">
+                                    <img class="img-portfolio img-responsive" src="img/thumbnails/idea_thumb.png">
+                                        <figcaption>
+                                            A complete website redesign and branding update for Northeastern University's student-led venture accelerator.
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="medium-4 columns">
+                            <div class="portfolio-item">
+                                <a href="/project.html">
+                                    <figure class="cap-bot">
+                                    <img class="img-portfolio img-responsive" src="img/thumbnails/shredcast_thumb.png">
+                                        <figcaption>
+                                            An app currently in development which ranks the users favorite ski mountains based on the conditions that matter the most to them.
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="medium-4 columns">
+                            <div class="portfolio-item">
+                                <a href="/project.html">
+                                    <figure class="cap-bot">
+                                    <img class="img-portfolio img-responsive" src="img/thumbnails/mycestro_thumb.png">
+                                        <figcaption>
+                                            A wearable, gesture controlled, plug-in-play wireless mouse, currently on the market. Featured on TechCrunch, Wired, and Gizmag.
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="medium-4 columns">
+                            <div class="portfolio-item"> 
+                                <a href="/project.html">
+                                    <figure class="cap-bot">
+                                    <img class="img-portfolio img-responsive" src="img/thumbnails/ediblearrange_thumb.png">
+                                        <figcaption>
+                                            A logo-redesign proposal for Edible Arrangements made for my Advanced Writing in the Creative Industries class.
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="medium-4 columns">
+                            <div class="portfolio-item"> 
+                                <a href="/project.html">
+                                    <figure class="cap-bot">
+                                    <img class="img-portfolio img-responsive" src="img/thumbnails/pttech_thumb.png">
+                                        <figcaption>
+                                            Website redesign and on-site photography for a mid-sized metal stamping and plastic tooling company outside of Detroit, MI.
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="medium-4 columns">
+                            <div class="portfolio-item"> 
+                                <a href="/project.html">
+                                    <figure class="cap-bot">
+                                    <img class="img-portfolio img-responsive" src="img/thumbnails/bradbury_thumb.png">
+                                        <figcaption>
+                                            A timeline on Bradbury Thompson designed for my History of Graphic Design class.
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a target="blank" href="https://www.behance.net/collection/26195595/Portfolio-Projects" class="btn btn-dark">View Smaller Projects</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
         </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="callout panel">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="callout panel">
-          <p>Four columns</p>
-        </div>
-      </div>
-    </div>
+        <!-- /.container -->
+    </section>
+
+
+
+<%= partial "footer" %>
+
+    <!-- Custom Theme JavaScript -->
+    <script type="text/javascript">
+
+    $( document ).ready(function() {
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });        
+});
+   
     
-    <hr />
-            
-    <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-    <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-12.columns" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <div class="row collapse">
-            <label>Input Label</label>
-            <div class="small-9 columns">
-              <input type="text" placeholder="small-9.columns" />
-            </div>
-            <div class="small-3 columns">
-              <span class="postfix">.com</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Select Box</label>
-          <select>
-            <option value="husker">Husker</option>
-            <option value="starbuck">Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 columns">
-          <label>Choose Your Favorite</label>
-          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <label>Check these out</label>
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-          <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Textarea Label</label>
-          <textarea placeholder="small-12.columns"></textarea>
-        </div>
-      </div>
-    </form>
-  </div>     
+    </script>
 
-  <div class="large-4 medium-4 columns">
-    <h5>Try one of these buttons:</h5>
-    <p><a href="#" class="small button">Simple Button</a><br/>
-    <a href="#" class="small radius button">Radius Button</a><br/>
-    <a href="#" class="small round button">Round Button</a><br/>            
-    <a href="#" class="medium success button">Success Btn</a><br/>
-    <a href="#" class="medium alert button">Alert Btn</a><br/>
-    <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-    <div class="panel">
-      <h5>So many components, girl!</h5>
-      <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-      <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-    </div>
-  </div>
-</div>
+</body>
+
+</html>

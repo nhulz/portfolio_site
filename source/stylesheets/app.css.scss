@@ -1,35 +1,257 @@
-@import "bourbon";
-@import "home";
-@import "users";
-
 @import "settings";
 @import "foundation.scss";
 
+@import "bourbon";
+@import "base/base";
 
-header {
-  @include grid-row;
 
-  .logo  { @include grid-column($columns:3, $center:true); }
-  padding-bottom: em-calc(10px);
+
+
+/* Utilities */
+.list-inline{
+padding-left: 0;
+margin-left: -5px;
+list-style: none;
+
+  li{
+    display: inline-block;
+  }
+}
+
+.blue{
+  color: $blue;
+}
+
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family:"Helvetica Neue","Source Sans Pro",Helvetica,Arial,sans-serif;
+}
+
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+
+/* Custom Button Styles */
+.btn-dark {
+    padding:10px 16px;
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+      @include transition(all 0.2s ease);
+
+
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+      @include transition(all 0.2s ease);
+
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    max-width:none;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+.about-pic {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Services Section */
+
+.services {
+    padding: 50px 0;
+    background-color: $blue;
+    color: white;
+
+    h1,h2,h3,h4{
+      color:white;
+    }
+} 
+
+/* .services */
+.service-item {
+    margin-bottom: 30px;
+}
+
+
+
+/* Portfolio */
+.portfolio {
+    padding: 25px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+
+
+
+/* NATHANS STYLING */
+
+.header,
+.header h1,
+.header h3{
+
+}
+
+.banner { position: relative; overflow: auto; 
+
+        li { list-style: none; }
+
+        ul li { float: left; }
 
 }
 
 
-.main-content {
-  @include grid-row;
+/* Thumbnails */
+figure {
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+}
+figcaption {
+  position: absolute;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 20px;
+  opacity: 1;
+  @include transition(all 0.6s ease);
+  text-align: left;
 
-  aside  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:3);
-    // }
-  }
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+figure:before {
+  position: absolute;
+  font-weight: 800;
+  background: black;
+  background: rgba(255,255,255,0.75);
+  text-shadow: 0 0 5px white;
+  color: black;
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  @include transition(all 0.6s ease);
+  opacity: 0.75;
+}
+figure:hover:before {
+  opacity: 1;
+}
 
-  article  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:8, $offset: 1);
-    // }
-  }
 
+.cap-bot:before { bottom: 10px; left: 10px; }
+.cap-bot figcaption { 
+    left: 0; 
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+}
+.cap-bot:hover figcaption { bottom: 0; }
+
+
+
+
+/* Project Page */
+#project-header{
+    height: auto;
+    background: none;
+    border-bottom: solid thin #ccc;
+
+}
+
+
+.project{
+    margin: $margin-fifty;
+
+    img{
+        padding-bottom: 20px;
+    }
+}
+
+
+#project-name{
+    margin-bottom: 20px;
+    font-weight: bold;
 }

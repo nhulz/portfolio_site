@@ -17,3 +17,9 @@ end
 
 
 gem 'bourbon'
+
+gem 'font-awesome-less'
+
+gem "jquery-middleman"
+
+gem 'sprockets'
