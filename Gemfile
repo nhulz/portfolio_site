@@ -23,3 +23,5 @@ gem 'font-awesome-less'
 gem "jquery-middleman"
 
 gem 'sprockets'
+
+gem 'middleman-deploy', '~> 0.3.0'
