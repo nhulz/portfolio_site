@@ -1,6 +1,8 @@
 // Margins
 $margin-fifty: 50px 0 50px 0;
 
+// Padding
+$padding-fifty: 50px 0 50px 0;
 
 
 // Typography
@@ -31,7 +33,8 @@ $base-z-index: 0;
 $blue: #428bca;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #DDD;
+$light-gray: #666;
+$lightest-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
@@ -40,7 +43,7 @@ $light-green: #E6EFC2;
 $base-background-color: white;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $light-gray;
 $base-accent-color: $blue;
 
 // Link Colors
@@ -56,7 +59,7 @@ $notice-color: lighten($base-accent-color, 40);
 $success-color: $light-green;
 
 // Border color
-$base-border-color: $light-gray;
+$base-border-color: $lightest-gray;
 $base-border: 1px solid $base-border-color;
 
 // Forms
