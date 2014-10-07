@@ -25,3 +25,5 @@ gem "jquery-middleman"
 gem 'sprockets'
 
 gem 'middleman-deploy', '~> 0.3.0'
+
+gem "middleman-imageoptim", "~> 0.1.4"
