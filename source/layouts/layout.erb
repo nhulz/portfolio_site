@@ -6,16 +6,23 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "Nathan Hulsey's Portfolio" %></title>
     
-    <%= stylesheet_link_tag "app", "style" %>
-    <%= javascript_include_tag "modernizr" %>
+    <link rel="stylesheet" href="stylesheets/app.css">
+
+<!--     <%= stylesheet_link_tag "app", "style" %>
+ -->    <%= javascript_include_tag "modernizr" %>
 
   <!-- Included CSS Files, use foundation.css if you do not want minified code -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
+
+
+      <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
   </head>
   
   <body class="<%= page_classes %>">
     <%= yield %>
-
     <%= javascript_include_tag  "all" %>
   </body>
 </html>

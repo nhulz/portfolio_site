@@ -7,10 +7,10 @@ compass_config do |config|
   config.add_import_path "bower_components/foundation/scss"
   
   # Set this to the root of your project when deployed:
-  config.http_path = "/"
+  config.http_path = ""
   config.css_dir = "stylesheets"
   config.sass_dir = "stylesheets"
-  config.images_dir = "images"
+  config.images_dir = "img"
   config.javascripts_dir = "javascripts"
 
   # You can select your preferred output style here (can be overridden via the command line):
@@ -84,12 +84,12 @@ set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :images_dir, 'img'
 
 # Build-specific configuration
 configure :build do
 
-  activate :imageoptim
+  # activate :imageoptim
 
   # For example, change the Compass output style for deployment
    activate :minify_css

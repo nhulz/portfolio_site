@@ -26,4 +26,4 @@ gem 'sprockets'
 
 gem 'middleman-deploy', '~> 0.3.0'
 
-gem "middleman-imageoptim", "~> 0.1.4"
+# gem "middleman-imageoptim", "~> 0.1.4"

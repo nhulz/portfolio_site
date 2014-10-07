@@ -1,6 +1,6 @@
+@charset "utf-8";
 @import "settings";
 @import "foundation.scss";
-
 @import "bourbon";
 @import "base/base";
 
@@ -94,12 +94,15 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
     margin: 0;
-    max-width:none;
 
     #header-text{
       letter-spacing: 5px;
       text-align: center;
       // margin-top: 500px;
+    }
+
+    img{
+      width:100%;
     }
 }
 
@@ -149,6 +152,7 @@ hr.small {
 }
 
 .img-portfolio {
+    width: 100%;
     margin: 0 auto;
 }
 
